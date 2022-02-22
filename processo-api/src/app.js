@@ -1,3 +1,4 @@
+// API em Node com SQL
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -10,13 +11,6 @@ app.use(bodyParser.json());
 const processo = models.Processo;
 
 app.use(cors());
-
-app.get('/', async (req, res) => {
-  const query = await processo.findAll({
-    attributes: ['persistenceId', 'CASEID', 'DATAABERTURA', 'SOLICITANTEDEPARTAMENTO', 'STATUSPROCESSO']
-  });
-  res.send(query);
-});
 
 app.get('/status', async (req, res) => {
   const { QueryTypes } = require('sequelize');
