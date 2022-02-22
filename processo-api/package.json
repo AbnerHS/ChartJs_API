@@ -1,0 +1,19 @@
+{
+  "name": "chart",
+  "version": "1.0.0",
+  "description": "Projeto de teste de conhecimento em JS e SQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abner H.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "chartjs": "^0.3.24",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.16.2",
+    "sequelize-cli": "^6.4.1"
+  }
+}
